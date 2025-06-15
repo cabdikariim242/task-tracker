@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
+
 <body class="h-[1000px]">
-    <div class="fixed left-0 right-0 bg-white ">
-        <div class="flex justify-between items-center px-3 bg-black  ">
+
+    <div class="relative bg-white ">
+        <div class="flex fixed left-0 right-0 justify-between items-center px-3 bg-black  ">
             <img src="../images/logo.a9fd31c8.png" alt="">
-            <div id="sidebar" class="hidden fixed  lg:right-5 md:right-5  lg:flex md:flex text-gray-400 gap-4 ">
-                <a href="#">Hosting</a>
-                <a href="#">VPS</a>
-                <a href="#">Domain</a>
-                <a href="#">Pricing</a>
+            <div id="sidebar" class="hidden absolute top-[54px] lg:top-3 md:top-3  bg-black flex-col  lg:right-5 
+            md:right-5  lg:flex lg:flex-row left-0 lg:left-[900px] md:left-[900px]  right-0
+             md:flex  md:flex-row text-[#d1cccc] gap-4 text-[20px]">
+                <a  class="border-b pl-10 lg:no-border lg:pl-0 md:border-none md:pl-0  " href="#">Hosting</a>
+                <a  class="border-b pl-10 lg:no-border lg:pl-0 md:border-none md:pl-0  " href="#">VPS</a>
+                <a class="border-b pl-10 lg:no-border lg:pl-0 md:border-none md:pl-0  "  href="#">Domain</a>
+                <a class="border-b pl-10 pb-3 lg:no-border lg:pl-0 md:border-none md:pl-0  "  href="#">Pricing</a>
             </div>
-        <img onclick="toggleSidebar()"  class="w-[50px] border border-white p-2 lg:hidden md:hidden" src="../images/three-lines.png" alt="Menu" />
+            <img onclick="toggleSidebar()" class="w-[50px] border border-white p-2 lg:hidden md:hidden"
+                src="../images/three-lines.png" alt="Menu" />
         </div>
+
+        <!-- section one -->
+    <section id="Hosting" class="pt-20 bg-black">
+        <div class="flex justify-around items-center flex-col lg:flex-row md:flex-row ">
+            <div class="ml-20 flex flex-col  items-center">
+                <h2 class="text-white font-bold text-[55px] lg:text-[75px] md:text-[75px] ">Cloud Hosting  for Pros</h2>
+                <p class="text-gray-400 text-[23px]">Deploy your website in less than 60 seconds.</p>
+                <button class="bg-[rgb(255,52,0)] text-white font-bold mt-10 w-[200px] py-3 rounded-3xl">GET STARTED</button>
+            </div>
+            <img class="w-[550px]" src="../images/banner(570px).c4c80e79.webp" alt="">
+        </div>
+    </section>
+
+
+    <!-- section two -->
+
+    <section id="VPS" class="pt-20">
+        <div>
+            <h2>Starting at $10 per month</h2>
+            <P>Bring your site to the next level with one of the most popular domains!</P>
+            <div>
+                <input type="text">
+                <div class="flex items-center ml-10">
+                    <img class="w-[20px] h-[20px]" src="../images/search.png" alt="">
+                    <p>SEARCH</p>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
 
 
 
-    
-<script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('flex');
-    
-  }
-</script>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+            sidebar.classList.toggle('flex');
+
+        }
+    </script>
 
 </body>
+
 </html>
