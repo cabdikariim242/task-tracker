@@ -192,25 +192,49 @@
                 </div>
             </div>
         </section>
+        <!-- section four -->
 
 
 
+        <section id="Domain">
+            <div>
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-[rgb(27,7,96)] text-[34px] font-[600] text-center">Host on the Cloud to Keep Growing</h2>
+                    <p class="text-[rgb(149,147,159)] mb-20 text-[25px] font-[400] text-center">Why should you take care about the domain on our
+                        platform?</p>
+                </div>
+                <div class="flex flex-col lg:flex-row md:flex-row mx-10  justify-around">
+                    <div class="">
+                        <img class="w-10" src="../images/recovery.png" alt="">
+                        <h2 class="text-[rgb(27,7,96)] text-[34px] font-[600]">Super Easy to Use</h2>
+                        <p class="text-[rgb(149,147,159)] text-[20px] font-[400] max-w-[600px]">There are no unexpected situations with your domain. We have a simple instruction about
+                            setting up the domain in less than 15 minutes!</p>
+                            <p class="text-[rgb(255,52,0)] mt-10 mb-10 text-[25px] font-bold flex items-center">Learn More <span class="flex items-center pl-2 hover:pl-5"><img class="w-6" src="../images/arrow-right.png" alt=""></span></p>
+                    </div>
+                    <div>
+                        <img src="../images/easy(570px).b5bb79ba.webp " alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script>
-            function toggleSidebar() {
-                const sidebar = document.getElementById('sidebar');
-                sidebar.classList.toggle('hidden');
-                sidebar.classList.toggle('flex');
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+            sidebar.classList.toggle('flex');
+        }
+
+        function toggleClicked(elementId) {
+            const element = document.getElementById(elementId)
+            if (element) {
+                element.classList.toggle('bg-[rgb(0,217,255)]');
+                element.classList.toggle('text-white');
             }
-
-            function toggleClicked(elementId) {
-                const element = document.getElementById(elementId)
-                if (element) {
-                    element.classList.toggle('bg-[rgb(0,217,255)]');
-                    element.classList.toggle('text-white');
-                }
-            }
-        </script>
+        }
+    </script>
 
 </body>
 
