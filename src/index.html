@@ -7,11 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <style>
-       
+        /* #three:checked{
+            transform: rotate(90deg);
+        } */
     </style>
 </head>
 
-<body class=" h-[2000px]">
+<body class="">
 
     <div class="relative bg-white ">
         <div class="flex fixed left-0 right-0 justify-between items-center px-2 bg-black  h-[50px] z-50  ">
@@ -346,28 +348,130 @@
                 <div class=" flex flex-col  justify-center">
                     <h1 class="flex justify-center pt-20 text-[rgb(27,7,96)] text-[34px] font-bold">What our Customers
                         are Saying</h1>
-                    <p class="text-[#95939f] font=[400] pl-4 flex  justify-center text-[20px]">We are working on improving our
+                    <p class="text-[#95939f] font=[400] pl-4 flex  justify-center text-[20px]">We are working on
+                        improving our
                         services and making our customers happy!</p>
                 </div>
-                <div class="shadow-[0_2px_10px_rgba(0,0,0,0.50)] w-[350px] lg:w-auto md:w-auto sm:w-auto mt-10 pb-10 pt-10 flex flex-col lg:flex-row md:flex-row justify-center items-centerml-20 ">
-                   <div class="mx-2 ml-4  pb-10 relative ">
-                    <img class="w-[350px] pr-3 lg:w-auto md:w-auto sm:w-auto" src="../images/testimonial.ad9df737.jpg" alt="">
-                    <img class="absolute w-[60px] top-14 right-[-20px]
+                <div
+                    class="shadow-[0_2px_10px_rgba(0,0,0,0.50)] w-[350px] lg:w-auto md:w-auto sm:w-auto mt-10 pb-10 pt-10 flex flex-col lg:flex-row md:flex-row justify-center items-centerml-20 ">
+                    <div class="mx-2 ml-4  pb-10 relative ">
+                        <img class="w-[350px] pr-3 lg:w-auto md:w-auto sm:w-auto"
+                            src="../images/testimonial.ad9df737.jpg" alt="">
+                        <img class="absolute w-[60px] top-14 right-[-20px]
                     
                     " src="../images/double-quote.png" alt="">
-                   </div>
+                    </div>
                     <div class="ml-10">
-                        <p class="mb-10 text-[#95939f] text-start max-w-[500px] text-[21px] mr-10">
-                            &#34 I had large issues with my site on other cloud hosting company - bad performance, complex
+                        <p class="mb-10 text-[#95939f] text-start max-w-[500px] text-[18px] mr-10">
+                            &#34 I had large issues with my site on other cloud hosting company - bad performance,
+                            complex
                             setting... I was really disappointed, but fortunately one day I has found this site and get
-                            in touch with these guys. They help me with all the nuances and my site are much better now! &#34
+                            in touch with these guys. They help me with all the nuances and my site are much better now!
+                            &#34
                         </p>
-                        <p class="text-[rgb(27,7,96)] text-[24px]  flex items-center"> 
+                        <p class="text-[rgb(27,7,96)] text-[24px]  flex items-center">
                             <span class="mr-4">
                                 <img src="../images/remove.png" alt="">
-                            </span> Jhone Lumeo 
+                            </span> Jhone Lumeo
                         </p>
                         <p class="text-[#95939f] ml-5 text-[18px]">Jally company CEO</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section six -->
+
+
+        <section id="Pricing">
+
+            <div class=" flex flex-col mt-10 relative  ">
+                <div class="flex flex-col lg:flex-row md:flex-row bg-[rgb(37,132,255)] z-[10] max-w-[1000px] text-white lg:left-52 
+                    lg:right-52 left-0 right-0  items-center top-[-100px]   absolute ">
+                    <div class="ml-10 text-center lg:text-start md:text-start">
+                        <h1 class="mt-4 text-[25px]  font-bold">
+                            Ready to Get Started?
+                        </h1>
+                        <p class="max-w-[700px] mb-10 text-[17px] font-[600] lg:text-start ">If you are encouraged with
+                            our services and want to know more. Jump in and let's start
+                            improving your business!</p>
+                    </div>
+                    <button class="bg-[rgb(0,217,255)] px-10 mx-4 rounded-3xl font-bold py-2 mb-3 ">GET STARTED</button>
+                </div>
+                <div class="bg-[rgb(44,43,43)] text-white ">
+
+                    <div class="flex flex-col lg:flex-row md:flex-row  lg:justify-around 
+                    md:justify-around sm:justify-around items-center mt-20 mb-7">
+
+                        <div class=" lg:-order-none md:order-none order-last ml-5">
+                            <img src="../images/logo(footer).6bafdaf6.png" alt="">
+                            <p>Copyright 2022 Mosh Hamedani</p>
+                        </div>
+
+
+                        <div class="flex justify-between px-10 w-full -600 mb-7 mt-20 lg:mt-0 md:mt-0  border-b border-[rgb(112,109,109)] lg:border-none md:border-none">
+                            <div>
+                                <h1 class="text-[20px] uppercase font-bold mb-3">Products</h1>
+                               <div id="content1" class="hidden lg:block ">
+                                 <p class="text-[#857c7c] text-[16px] font-[400]">WordPress Hosting</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400]">Free Automated wordpress</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400] mb-5 lg:mb-0 md:mb-0">Migrations</p>
+                               </div>
+                            </div>
+                            <div>
+                                <img onclick="rotateToggle('arrow1', 'content1')" id="arrow1" class="lg:hidden md:hidden mb-10 bg-[#dad8d8] px-2 py-2 rounded-3xl transition-transform duration-300 transform" src="../images/chevron.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-between px-10 w-full -600 mb-7  border-b border-[rgb(112,109,109)] lg:border-none md:border-none">
+                            <div>
+                                <h1 class="text-[20px] uppercase font-bold">Company</h1>
+                               <div id="content2" class="hidden lg:block">
+                                 <p class="text-[#857c7c] text-[16px] font-[400]">About</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400]">Affiliates</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400] mb-5 lg:mb-0 md:mb-0">Blog</p>
+                               </div>
+                            </div>
+
+                            <div>
+                                <img onclick="rotateToggle('arrow2', 'content2')" id="arrow2" class="lg:hidden md:hidden mb-10 bg-[#dad8d8] px-2 py-2 rounded-3xl transition-transform duration-300 transform" src="../images/chevron.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-between px-10 w-full -600 mb-7  border-b border-[rgb(112,109,109)] lg:border-none md:border-none">
+                            <div>
+                                <h1 class="text-[20px] uppercase font-bold">Support</h1>
+                                <div id="content3" class="hidden lg:block ">
+                                    <p class="text-[#857c7c] text-[16px] font-[400]">Contact</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400]">Knowledge Base</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400] mb-5 lg:mb-0 md:mb-0">FAQ</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img onclick="rotateToggle('arrow3', 'content3')" id="arrow3" class="lg:hidden md:hidden mb-10 bg-[#dad8d8] px-2 py-2 rounded-3xl transition-transform duration-300 transform" src="../images/chevron.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="flex justify-between px-10 w-full -600 mb-7  border-b border-[rgb(112,109,109)] lg:border-none md:border-none">
+                            <div>
+                                <h1 class="text-[20px] uppercase font-bold">Domains</h1>
+                              <div id="content4" class="hidden lg:block ">
+                                  <p class="text-[#857c7c] text-[16px] font-[400]">Domain Checker</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400]">Domain Transfer</p>
+                                <p class="text-[#857c7c] text-[16px] font-[400] mb-5 lg:mb-0 md:mb-0">Free Domain</p>
+                              </div>
+                            </div>
+
+                            <div>
+                                <img onclick="rotateToggle('arrow4', 'content4')" id="arrow4" class="lg:hidden md:hidden mb-10 bg-[#dad8d8] px-2 py-2 rounded-3xl transition-transform duration-300 transform"
+                                 src="../images/chevron.png" alt="">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -392,9 +496,17 @@
                 element.classList.toggle('bg-[rgb(0,217,255)]');
                 element.classList.toggle('text-white');
             }
-        }
+        };
+
+          function rotateToggle(arrowId, contentId) {
+      const arrow = document.getElementById(arrowId);
+      const content = document.getElementById(contentId);
+
+      arrow.classList.toggle("rotate-90");
+      content.classList.toggle("hidden");
+    }
     </script>
 
 </body>
 
-</html>
+</ht
