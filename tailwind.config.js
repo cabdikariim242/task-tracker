@@ -1,19 +1,12 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
-
- // tailwind.config.js
 // tailwind.config.js
 module.exports = {
+  content: [
+    "./src/**/*.{html,vue,js}", // ✅ Scan all HTML, Vue, and JS files in /src
+  ],
   theme: {
     extend: {},
     screens: {
-      'xs': { 'max': '639px' }, // 👈 from 0 to 639px
+      'xs': { 'max': '639px' }, // 0 - 639px
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -21,4 +14,5 @@ module.exports = {
       '2xl': '1536px'
     },
   },
-}
+  plugins: [],
+};
