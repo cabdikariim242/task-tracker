@@ -1,7 +1,8 @@
-# Ignore EVERYTHING first
+# Ignore everything
 *
+
+# But keep folders
 !*/
 
-# Then whitelist specific files/folders
-!src/
-!src/index.html
+# Allow everything inside src/ folder
+!src/**

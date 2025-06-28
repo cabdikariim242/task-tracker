@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="./output.css" rel="stylesheet">
+
+
+    <style>
+        .notdark {
+            background-color: rgb(48, 42, 42);
+
+        }
+
+        .notdark h1 {
+            color: white;
+        }
+
+        .notdark p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="dark">
+
+    <div>
+        <div class="bg-black flex    justify-between p-4">
+            <!-- nav bar -->
+            <h1 class="font-poppins text-white text-[24px]  font-[400]">LOGO</h1>
+            <img src="../images/hamburger (1).png" alt="">
+        </div>
+
+        <div class="flex flex-row justify-between gap-8 mx-10">
+           
+            <div class="bg-[#40179e] w-full ">
+                <h1>logo</h1>
+                <p>abcd</p>
+                <p>abcd</p>
+                <p>abcd</p>
+                <p>abcd</p>
+            </div>
+
+            <div class="bg-[green] justify-between  
+            flex w-full" >
+                <p>p1</p>
+                <div class="flex flex-row gap-8 ">
+                 
+                <p>p1</p>
+                <p>p1</p>
+                </div>
+                <div class="flex ">
+                    <img class="w-[1593px]" src="../images/banner.png" alt="">
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+
+        </div>
+
+
+
+
+        <script>
+            let isToggled = false;
+
+            function toggleImage() {
+                const btn = document.getElementById('toggleBtn');
+                const isdark = document.getElementById('dark');
+                isToggled = !isToggled;
+
+                if (isToggled) {
+                    btn.classList.remove("bg-[url('../images/bright.png')]");
+                    isdark.classList.remove("dark");
+                    btn.classList.add("bg-[url('../images/dark.png')]");
+                    isdark.classList.add("notdark");
+
+
+                } else {
+                    btn.classList.remove("bg-[url('../images/dark.png')]");
+                    isdark.classList.remove("notdark");
+                    btn.classList.add("bg-[url('../images/bright.png')]");
+                    isdark.classList.add("dark");
+
+
+
+
+                }
+            }
+        </script>
+
+</body>
+
+</html>
