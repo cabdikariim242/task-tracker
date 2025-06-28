@@ -2,8 +2,13 @@
 <html>
 
 <head>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <link href="./output.css" rel="stylesheet">
 
 
@@ -16,7 +21,8 @@
     .notdark h1 {
       color: white;
     }
-    .notdark p{
+
+    .notdark p {
       color: white;
     }
   </style>
@@ -24,37 +30,49 @@
 
 <body id="dark">
   <div>
-    <div class="bg-black hidden  xs:flex justify-between p-4">
+    <div class="bg-black flex  lg:hidden md:hidden sm:hidden  justify-between p-4">
       <!-- nav bar -->
       <h1 class="font-poppins text-white text-[24px]  font-[400]">LOGO</h1>
       <img src="../images/hamburger (1).png" alt="">
     </div>
 
     <!-- side bar -->
-    
 
-      <div class=" relative">
-        <div class="absolute top-0 left-10">
-          <h1 class="font-poppins mb-10 mt-4 text-black text-[24px]  font-[400]">LOGO</h1>
-          <p>Shirts</p>
-          <p>Jackets</p>
-          <p>Jeans</p>
-          <p>Shoes</p>
-          
+
+    <div class=" hidden items-center lg:flex md:flex">
+      <div class=" ml-20">
+        <h1 class="font-poppins mb-10 mt-4 text-black text-[34px]  font-bold">LOGO</h1>
+        <div class="">
+          <p class="text-[23px] pb-5 text-gray-500 hover:text-black font-[500]">Shirts</p>
+          <p class="text-[23px] pb-5 text-gray-500 hover:text-black font-[500]">Jackets</p>
+          <p class="text-[23px] pb-5 text-gray-500 hover:text-black font-[500]">Jeans</p>
+          <p class="text-[23px] pb-5 text-gray-500 hover:text-black font-[500]">Shoes</p>
+
+
         </div>
 
       </div>
-      <!-- jeans section -->
-      <div class=" flex justify-around p-4 ">
+
+     </div>
+     <!-- jeans section -->
+     <div class="flex-col">
+      <div class=" flex justify-around  p-4 ">
         <h1 class="font-poppins text-black text-[20px] font-[400]">JEANS</h1>
-        <div class=" flex gap-2">
-          <img class="w-8  h-2  " src="../images/shopping-cart (4).png" alt="">
-          <button id="toggleBtn" class="w-20 h-12 bg-no-repeat bg-center  bg-[url('../images/bright.png')]"
+        <div class=" flex  gap-1 items-center">
+          <img class="w-8  h-7  " src="../images/shopping-cart (4).png" alt="">
+          <button id="toggleBtn" class="w-20 h-12 bg-no-repeat bg-center  bg-[url('../images/bright.png')] "
             onclick="toggleImage()">
           </button>
         </div>
+
+
       </div>
+            <img class="w-10" src="../images/banner.png" alt="">
     </div>
+
+
+
+  </div>
 
 
 
